@@ -1,0 +1,327 @@
+.header, .line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.mobile{
+    display: none;
+}
+
+.header > div{
+    width: calc(100%/5);
+    margin-right: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: grey;
+    text-align: center;
+}
+
+.header > div:first-child {
+    color:black;
+}
+
+.header:last-child{
+    margin-right: 0;
+}
+
+.line{
+    border: 1px solid grey;
+    margin-right: 16%;
+    margin-left: 15%;
+}
+
+.name-of-man{
+    display: flex;
+    align-items: baseline;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
+
+.name{
+    font-family: 'Gilroy-Bold',sans-serif;
+    font-size: 47px;
+    color: black;
+    text-align: left;
+}
+
+.briefly{
+    padding-left: 35%;
+    text-align: center;
+    font-family: 'Gilroy-Bold', sans-serif;   
+}
+
+.picture-of-man {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    margin-bottom: 4%;
+}
+
+.about, .portfolio, .contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    background-color: #F6F6F6;
+    margin-bottom: 4%;
+}
+
+.about > div, .contacts-man > div{
+    padding-bottom: 2%;
+    font-size: 18px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.about > div:first-child, .skills-man, .portfolio-man, .contacts-man > div:first-child {
+    font-size: 34px;
+    font-family: 'Gilroy-Bold',sans-serif;
+    font-weight: bold;
+}
+
+.p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: 'Gilroy-Bold',sans-serif;
+}
+
+.skills-man-text{
+    font-size: 18px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Gilroy-Bold',sans-serif;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 15%;
+}
+
+.skills-icons{
+    padding-bottom: 4%;
+    width: 65%;
+}
+
+.skills-stars{
+    flex-wrap: nowrap ;
+    white-space: nowrap;
+    padding-top: 10%;
+}
+
+.portfolio-man{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.portfolio{
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+.portfolio > div > div:last-child{
+    padding-top: 3%;
+    padding-bottom: 6%;
+    font-family: 'Gilroy-Bold',sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+
+}
+
+.contacts{
+    background-color: white;
+}
+
+.contacts-man > div:last-child{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-bottom: 4%;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.contacts-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-bottom: 2%;
+}
+
+.contacts-icons > div {
+    margin-right: 10%;
+}
+
+.footer:last-child{
+    font-family: 'Gilroy-Bold',sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        display: none;
+    }
+
+    .star{
+        width: 20px;
+        height: 20px;
+    }
+
+    .activity{
+        width: 300px;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .mobile > div{
+        margin-bottom: 4%;
+        font-size: 20px;
+        font-family: 'Gilroy-Bold', sans-serif;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .mobile > div:first-child {
+        color:black;
+    }
+    
+    .skills{
+        flex-direction: column;
+    }
+    .skills-icons{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (min-width: 600px) {
+    
+    .header{
+        display: none;
+    }
+
+    .star{
+        width: 20px;
+        height: 20px;
+    }
+
+    .activity{
+        width: 500px;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .mobile > div{
+        margin-bottom: 4%;
+        font-size: 20px;
+        font-family: 'Gilroy-Bold', sans-serif;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .mobile > div:first-child {
+        color:black;
+    }
+
+    .skills{
+        flex-direction: column;
+    }
+
+    .skills-icons{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-bottom: 15%;
+    }
+
+    .star{
+        width: 20px;
+        height: 20px;
+    }
+
+    .activity{
+        width: 668px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .star{
+        width: 25px;
+        height: 25px;
+    }
+
+    .activity{
+        width: 892px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .star{
+        width: 30px;
+        height: 30px;
+    }
+
+    .activity{
+        width: 1100px;
+    }
+}
