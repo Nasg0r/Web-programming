@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+th {
+    font-weight: normal;
+    color: black;
+    border-bottom: 1px dashed black;
+    padding: 12px 17px;
+  }
+td {
+    color: black;
+    padding: 7px 17px;
+  }
+tr:hover td {
+    background: #e9f1ff;
+  }
+
+  button, input {
+    padding: 20px 30px;
+    margin: 10px 20px;
+    color: black;
+    border: 1px solid black;
+    background: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+input{
+    border: 1px solid black;
+}
